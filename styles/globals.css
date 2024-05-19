@@ -10,4 +10,17 @@
      after:bg-yellow-400 text-white after:w-full after:scale-x-0 after:hover:scale-x-100 
      after:transition after:duration-300 after:origin-right;
   }
+
+  .custom-bg {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.8111)
+      ),
+      url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }
 }
