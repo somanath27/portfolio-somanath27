@@ -29,7 +29,7 @@ const Hero = () => {
                before:h-0 before:w-0 before:rounded-full before:bg-blue-600
                 before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56"
               >
-                <span className="relative z-10">Hire Now</span>
+                <span className="relative z-10">Hire Me</span>
               </button>
               <button
                 className=" before:ease relative h-12 w-40 overflow-hidden

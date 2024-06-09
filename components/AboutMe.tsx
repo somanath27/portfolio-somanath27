@@ -45,13 +45,13 @@ const AboutMe = () => {
               </p>
             </div>
             <div className="p-6 text-center bg-yellow-500">
-              <p className="text-[50px] text-black font-bold">200+</p>
+              <p className="text-[50px] text-black font-bold">20+</p>
               <p className="text-[20px] text-black font-600">
                 Happy Client
               </p>
             </div>
             <div className="p-6 text-center bg-yellow-500">
-              <p className="text-[50px] text-black font-bold">300+</p>
+              <p className="text-[50px] text-black font-bold">30+</p>
               <p className="text-[20px] text-black font-600">
                 Project Done
               </p>

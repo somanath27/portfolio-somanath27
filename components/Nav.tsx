@@ -1,4 +1,5 @@
 import { Bars3CenterLeftIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 interface Props {
@@ -26,8 +27,13 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
         <div className="font-logo text-white text-[18px] cursor-pointer">
-          <span className="text-[30px] md:text-[40px] text-yellow-400">SB</span>
-          pvt ltd
+          <Image
+            src={require("../images/profile-pic.png")}
+            width={40}
+            height={40}
+            alt={""}
+            className="object-contain"
+          />
         </div>
         <ul className="md:flex hidden items-center space-x-10">
           <li>

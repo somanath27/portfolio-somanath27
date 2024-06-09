@@ -4,7 +4,7 @@ const TypeWrite = () => {
   return (
     <TypeAnimation
       sequence={[
-        "a  FullStack Developer",
+        "a FullStack Developer",
         1000,
         "a MERN Stack Developer",
         1000,
@@ -14,7 +14,7 @@ const TypeWrite = () => {
         1000,
       ]}
       wrapper="span"
-      speed={50}
+      speed={30}
       className="xl:text-[50px] lg:text-[40px] sm:text-[35px] text-[25px] text-white font-bold"
       repeat={Infinity}
     />

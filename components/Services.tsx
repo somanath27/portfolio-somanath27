@@ -3,7 +3,7 @@ import ServiceCard from "./Helper/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="pt-[5rem] pb-[8rem] bg-[#0b0c13]">
+    <div className="pt-[5rem] pb-[3rem] bg-[#0b0c13]">
       <div className="text-center">
         <p className="heading__mini">Popular Services</p>
         <h1 className="heading__primary">
