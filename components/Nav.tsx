@@ -1,6 +1,8 @@
 import { Bars3CenterLeftIcon } from "@heroicons/react/16/solid";
-import Image from "next/image";
+import { MdxImage as Image } from "../core/Mdx";
 import React, { useEffect, useState } from "react";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github.png";
 
 interface Props {
   openNav: () => void;
@@ -59,6 +61,16 @@ const Nav = ({ openNav }: Props) => {
           <li>
             <a className="nav__link" href="#">
               Contact
+            </a>
+          </li>
+          <li>
+            <a className="nav__link" href="https://www.linkedin.com/in/somanath07">
+              <Image src={linkedin} alt="linkedin" height="25" width="25" />
+            </a>
+          </li>
+          <li>
+            <a className="nav__link" href="https://github.com/somanath27">
+              <Image src={github} alt="github" height="25" width="25" />
             </a>
           </li>
         </ul>
