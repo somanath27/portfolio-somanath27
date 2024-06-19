@@ -25,10 +25,12 @@ const ProjectCard = ({ image, title, tech1, tech2, tech3, tech4 }: Props) => {
       <div>
         <h1 className="text-[25px] text-white">{title}</h1>
         <p className="text-white opacity-65 text-[15px] mt-[1rem]">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut
-          ab ea accusantium voluptatem ad saepe eum quidem fugiat quaerat
-          dolores dignissimos doloremque rerum excepturi, provident praesentium
-          architecto eius sapiente.
+          Experience seamless communication with ChitChatter, where real-time
+          messaging and dynamic typing indicators keep you in sync with friends
+          and family. Enjoy vibrant group chats managed by admins who ensure a
+          secure and enjoyable environment by controlling member access. Stay
+          connected with instant notifications and a smooth, uninterrupted
+          chatting experience.
         </p>
         <div className="mt-[1.3rem] grid-cols-2 grid sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
           <h1 className="px-4 py-3 bg-blue-700 text-white rounded-lg text-center">

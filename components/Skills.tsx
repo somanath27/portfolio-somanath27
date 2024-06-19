@@ -20,10 +20,11 @@ const Skills = () => {
             <span className="text-yellow-300">Skills</span> & Experience
           </h1>
           <p className="text-[15px] mb-[1.5rem] text-white opacity-70 mt-[1.5rem]">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-            fugit iure vero adipisci accusamus minus, repudiandae nostrum.
-            Facere expedita sapiente facilis ea molestiae similique magni sequi
-            architecto tempora provident.
+            With 2+ years of experience in web and mobile development, I specialize
+            in creating seamless, high-performance applications. My expertise
+            spans across modern technologies like React, Node.js, and AWS,
+            ensuring scalable and efficient solutions. Dive into my skillset to
+            see how I can help bring your projects to life.
           </p>
           <button
             className="relative flex h-[50px] w-40 items-center 
@@ -38,17 +39,17 @@ const Skills = () => {
         <div className="col-span-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem] items-center">
             <div>
-              <SkillCard title="React" image={react} percent="90%" />
+              <SkillCard title="React" image={react} percent="95%" />
             </div>
             <div>
               <SkillCard
                 title="ReactNative"
                 image={reactnative}
-                percent="90%"
+                percent="91%"
               />
             </div>
             <div>
-              <SkillCard title="Node" image={node} percent="90%" />
+              <SkillCard title="Node" image={node} percent="89%" />
             </div>
             <div>
               <SkillCard title="Typescript" image={typescript} percent="90%" />
@@ -57,13 +58,13 @@ const Skills = () => {
               <SkillCard title="Javascript" image={js} percent="90%" />
             </div>
             <div>
-              <SkillCard title="Graphql" image={graphql} percent="90%" />
+              <SkillCard title="Graphql" image={graphql} percent="85%" />
             </div>
             <div>
               <SkillCard title="MongoDB" image={mongo} percent="90%" />
             </div>
             <div>
-              <SkillCard title="Aws" image={aws} percent="90%" />
+              <SkillCard title="Aws" image={aws} percent="80%" />
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const TypeWrite = () => {
       ]}
       wrapper="span"
       speed={30}
-      className="xl:text-[50px] lg:text-[40px] sm:text-[35px] text-[25px] text-white font-bold"
+      className="xl:text-[40px] lg:text-[30px] sm:text-[25px] text-[20px] text-white font-bold"
       repeat={Infinity}
     />
   );

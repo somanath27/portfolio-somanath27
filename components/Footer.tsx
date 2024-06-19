@@ -4,15 +4,15 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="pt-[5rem] pb-[3rem] bg-black">
-      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
-        <div>
+      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
+        <div className="mt-5">
           {/* <div className="font-logo text-white text-[18px]">
             <span className="text-[30px] md:text-[40px] text-yellow-400">
               
             </span>
             bout
           </div> */}
-          <h1 className="text-[14px] mt-[0.5rem] text-white opacity-70">
+          <h1 className="text-[12px] mt-[0.5rem] text-white opacity-70">
             As a passionate Full Stack Developer with a knack for turning
             complex ideas into seamless digital experiences. With a strong
             foundation in both frontend and backend technologies, I specialize
@@ -24,7 +24,7 @@ const Footer = () => {
             Feel free to connect with me on{" "}
             <a
               href="https://www.linkedin.com/in/somanath07"
-              className="text-lg text-blue-600"
+              className="text-[13px] text-blue-600"
             >
               {" "}
               LinkedIn
@@ -32,14 +32,13 @@ const Footer = () => {
             or explore my
             <a
               href="https://github.com/somanath27"
-              className="text-lg text-blue-600"
+              className="text-[13px] text-blue-600"
             >
               {" "}
               Github
             </a>{" "}
             to see more of my work.
           </h1>
-          <p>somanathbarik143@gmail.com</p>
         </div>
         <div className="md: mx-auto">
           <h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">
