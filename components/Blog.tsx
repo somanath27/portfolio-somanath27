@@ -14,7 +14,7 @@ const Blog = () => {
         </h1>
       </div>
       <div className="w-[80%] mx-auto pt-[3rem] md:pt-[5rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[2rem]">
-        <div>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center">
           <BlogCard
             title="Full Stack Roadmap"
             comment={12}
@@ -22,7 +22,11 @@ const Blog = () => {
             image={fullstack}
           />
         </div>
-        <div>
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="100"
+        >
           <BlogCard
             title="GraphQL For Your API"
             comment={19}
@@ -30,7 +34,11 @@ const Blog = () => {
             image={graphql}
           />
         </div>
-        <div>
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+        >
           <BlogCard
             title="Future With AI"
             comment={4}

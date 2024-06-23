@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="pt-[5rem] pb-[3rem] bg-black">
-      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
-        <div className="mt-5">
+      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
+        <div>
           {/* <div className="font-logo text-white text-[18px]">
             <span className="text-[30px] md:text-[40px] text-yellow-400">
               
@@ -70,7 +70,7 @@ const Footer = () => {
           <div className="flex items-center mt-[1rem] space-x-2">
             <EnvelopeIcon className="w-[1rem] h-[1rem] text-yellow-300" />
             <p className="text-[17px]  font-normal text-white opacity-75">
-              somanathbarik143@gmail.com
+              somanathbarik0727@gmail.com
             </p>
           </div>
           <div className="flex items-center mt-[1rem] space-x-2">

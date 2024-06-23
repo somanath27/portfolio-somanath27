@@ -20,11 +20,11 @@ const Skills = () => {
             <span className="text-yellow-300">Skills</span> & Experience
           </h1>
           <p className="text-[15px] mb-[1.5rem] text-white opacity-70 mt-[1.5rem]">
-            With 2+ years of experience in web and mobile development, I specialize
-            in creating seamless, high-performance applications. My expertise
-            spans across modern technologies like React, Node.js, and AWS,
-            ensuring scalable and efficient solutions. Dive into my skillset to
-            see how I can help bring your projects to life.
+            With 2+ years of experience in web and mobile development, I
+            specialize in creating seamless, high-performance applications. My
+            expertise spans across modern technologies like React, Node.js, and
+            AWS, ensuring scalable and efficient solutions. Dive into my
+            skillset to see how I can help bring your projects to life.
           </p>
           <button
             className="relative flex h-[50px] w-40 items-center 
@@ -38,32 +38,60 @@ const Skills = () => {
         </div>
         <div className="col-span-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem] items-center">
-            <div>
+            <div data-aos="flip-left" data-aos-anchor-placement="top-center">
               <SkillCard title="React" image={react} percent="95%" />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="200"
+            >
               <SkillCard
                 title="ReactNative"
                 image={reactnative}
                 percent="91%"
               />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="400"
+            >
               <SkillCard title="Node" image={node} percent="89%" />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="600"
+            >
               <SkillCard title="Typescript" image={typescript} percent="90%" />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="800"
+            >
               <SkillCard title="Javascript" image={js} percent="90%" />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="1000"
+            >
               <SkillCard title="Graphql" image={graphql} percent="85%" />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="1200"
+            >
               <SkillCard title="MongoDB" image={mongo} percent="90%" />
             </div>
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="1400"
+            >
               <SkillCard title="Aws" image={aws} percent="80%" />
             </div>
           </div>

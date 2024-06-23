@@ -22,12 +22,15 @@ const Nav = ({ openNav }: Props) => {
     window.addEventListener("scroll", handler);
   }, []);
 
-  const stickyStyle = navSticky ? "bg-[#212428] shadow-grey-900 shadow-sm" : "";
+  const stickyStyle = navSticky
+    ? "bg-gradient-to-r from-[#1a1a1a] to-[#282c34] shadow-gray-800 shadow-sm"
+    : "";
+
   return (
     <div
       className={`fixed w-[100%] ${stickyStyle} transition-all duration-300 z-[1000]`}
     >
-      <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
+      <div className="flex items-center h-[10vh] justify-between w-[80%] mx-auto">
         <div className="font-logo text-white text-[18px] cursor-pointer">
           <Image
             src={require("../images/profile-pic.png")}
@@ -64,7 +67,10 @@ const Nav = ({ openNav }: Props) => {
             </a>
           </li>
           <li>
-            <a className="nav__link" href="https://www.linkedin.com/in/somanath07">
+            <a
+              className="nav__link"
+              href="https://www.linkedin.com/in/somanath07"
+            >
               <Image src={linkedin} alt="linkedin" height="25" width="25" />
             </a>
           </li>
