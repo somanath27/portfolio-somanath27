@@ -57,13 +57,17 @@ const Contact = () => {
             brilliant
           </h1>
           <p className="text-[15px] text-white mt-[1rem] opacity-75">
-            I'm excited to collaborate with you on your next project! Whether
-            you're looking to build a dynamic website, enhance your digital
-            presence, or need expert guidance on full stack development, I'm
-            here to help. Let's work together to create innovative solutions
-            that will elevate your brand and engage your audience. Feel free to
-            reach out via phone or use the contact form to start the
-            conversation
+            <div>
+              <p>
+                I&apos;m excited to collaborate with you on your next project!
+                Whether you&apos;re looking to build a dynamic website, enhance
+                your digital presence, or need expert guidance on full stack
+                development, I&apos;m here to help. Let&apos;s work together to
+                create innovative solutions that will elevate your brand and
+                engage your audience. Feel free to reach out via phone or use
+                the contact form to start the conversation.
+              </p>
+            </div>
           </p>
           <h1 className="mt-[2rem] mb-[2rem] text-[25px] text-yellow-300 underline font-bold font-mono">
             +91-7683844093
