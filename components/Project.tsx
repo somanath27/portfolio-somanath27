@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./Helper/ProjectCard";
-import chatapp from "../images/chatapp.png";
+import chatapp from "../images/chatapp.jpg";
 
 const Project = () => {
   return (

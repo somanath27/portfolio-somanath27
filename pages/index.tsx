@@ -11,6 +11,7 @@ import Skills from "@/components/Skills";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Toaster } from 'react-hot-toast';
 
 const HomePage = () => {
   const [showNav, setShowNav] = useState(false);
@@ -28,6 +29,7 @@ const HomePage = () => {
   }, []);
   return (
     <div className="overflow-hidden">
+      <Toaster />
       <NavMobile showNav={showNav} closeNav={closeNavHandler} />
       <Nav openNav={showNavHandler} />
       <Hero />

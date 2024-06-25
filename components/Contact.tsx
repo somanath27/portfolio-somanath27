@@ -1,6 +1,6 @@
 import { PhoneIcon } from "@heroicons/react/16/solid";
 import React, { useState } from "react";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [contact, setContact] = useState({
@@ -9,6 +9,11 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+
+  const success = () =>
+    toast.success("Message sent Successfully", {
+      style: { animation: "fade-in 0.5s" },
+    });
 
   const onChangeContact = (e: any) => {
     const { name, value } = e.target;
@@ -31,7 +36,7 @@ const Contact = () => {
     }).then((res) => {
       console.log("Response received");
       if (res.status === 200) {
-        toast.success("Message sent successfully!");
+        success();
         setContact({
           name: "",
           email: "",
@@ -52,10 +57,13 @@ const Contact = () => {
             brilliant
           </h1>
           <p className="text-[15px] text-white mt-[1rem] opacity-75">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            illum, adipisci explicabo blanditiis voluptate soluta! Provident,
-            libero, quaerat incidunt qui blanditiis quas mollitia iure dolorem
-            nulla assumenda, doloremque officiis quidem.
+            I'm excited to collaborate with you on your next project! Whether
+            you're looking to build a dynamic website, enhance your digital
+            presence, or need expert guidance on full stack development, I'm
+            here to help. Let's work together to create innovative solutions
+            that will elevate your brand and engage your audience. Feel free to
+            reach out via phone or use the contact form to start the
+            conversation
           </p>
           <h1 className="mt-[2rem] mb-[2rem] text-[25px] text-yellow-300 underline font-bold font-mono">
             +91-7683844093
