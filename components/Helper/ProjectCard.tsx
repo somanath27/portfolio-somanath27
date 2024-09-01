@@ -10,50 +10,59 @@ interface Props {
   tech2: string;
   tech3: string;
   tech4: string;
+  link: string;
+  description: string;
 }
-const ProjectCard = ({ image, title, tech1, tech2, tech3, tech4 }: Props) => {
+const ProjectCard = ({
+  image,
+  title,
+  tech1,
+  tech2,
+  tech3,
+  tech4,
+  link,
+  description,
+}: Props) => {
   return (
     <div className="grid w-[80%] mx-auto pt-[5rem] grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-      <div className="relative p-2 rounded-xl cursor-pointer transform transition-all duration-500 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 shadow-lg hover:-rotate-3 hover:scale-105 hover:shadow-2xl">
+      <div className="relative p-2 rounded-2xl cursor-pointer transform transition-transform duration-500 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 shadow-lg hover:rotate-1 hover:scale-105 hover:shadow-2xl">
         <Image
           src={image}
           alt={title}
           width={500}
           height={500}
-          className="object-contain rounded-xl mx-auto shadow-md transition-all duration-500 hover:shadow-xl"
+          className="object-cover rounded-2xl mx-auto shadow-lg transition-shadow duration-500 hover:shadow-2xl"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-end">
+          <div className="p-4 text-white text-lg font-semibold">{title}</div>
+        </div>
       </div>
 
       <div>
         <h1 className="text-[25px] text-white">{title}</h1>
         <a
-          href="https://chatapplication-frontend.vercel.app/"
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center mt-4 px-4 py-2 bg-indigo-600 text-white text-lg font-semibold rounded-lg shadow-lg transform transition-transform hover:scale-105"
         >
           <LinkIcon className="h-5 w-5 mr-2" />
-          Visit ChitChatter
+          Visit {title.toLowerCase()}
         </a>
         <p className="text-white opacity-65 text-[15px] mt-[1rem]">
-          Experience seamless communication with ChitChatter, where real-time
-          messaging and dynamic typing indicators keep you in sync with friends
-          and family. Enjoy vibrant group chats managed by admins who ensure a
-          secure and enjoyable environment by controlling member access. Stay
-          connected with instant notifications and a smooth, uninterrupted
-          chatting experience.
+          {description}
         </p>
-        <div className="mt-[1.3rem] grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
-          <h1 className="px-4 py-3 bg-blue-700 text-white rounded-lg text-center">
+        <div className="mt-[1.3rem] flex flex-wrap gap-[2rem] justify-center">
+          <h1 className="px-4 py-3 bg-blue-700 text-white rounded-lg text-center inline-block">
             {tech1}
           </h1>
-          <h1 className="px-4 py-3 bg-yellow-500 text-slate-800 rounded-lg text-center">
+          <h1 className="px-4 py-3 bg-yellow-500 text-slate-800 rounded-lg text-center inline-block">
             {tech2}
           </h1>
-          <h1 className="px-4 py-3 bg-sky-500 text-white rounded-lg text-center">
+          <h1 className="px-4 py-3 bg-sky-500 text-white rounded-lg text-center inline-block">
             {tech3}
           </h1>
-          <h1 className="px-4 py-3 bg-blue-400 text-white rounded-lg text-center">
+          <h1 className="px-4 py-3 bg-blue-400 text-white rounded-lg text-center inline-block">
             {tech4}
           </h1>
         </div>
