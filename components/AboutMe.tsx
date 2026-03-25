@@ -45,7 +45,7 @@ const AboutMe = () => {
               data-aos-anchor-placement="top-center"
               className="p-6 text-center bg-yellow-500"
             >
-              <p className="text-[50px] text-black font-bold">3+</p>
+              <p className="text-[50px] text-black font-bold">4+</p>
               <p className="text-[20px] text-black font-600">
                 Years Experience
               </p>
@@ -74,7 +74,7 @@ const AboutMe = () => {
               data-aos-delay="600"
               className="p-6 text-center bg-yellow-500"
             >
-              <p className="text-[50px] text-black font-bold">3+</p>
+              <p className="text-[50px] text-black font-bold">5+</p>
               <p className="text-[20px] text-black font-600">Award Win</p>
             </div>
           </div>
